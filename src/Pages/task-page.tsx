@@ -12,16 +12,14 @@ const TaskPage = () => {
         setTasks(savedTasks)
     }, [])
 
-    const updateTaskStatus = (
-        id: string,
-        newStatus: "completed" | "pending"
-    ) => {
-        const updatedTasks = tasks.map((task) =>
-            task.id === id ? { ...task, status: newStatus } : task
-        )
-        setTasks(updatedTasks)
-        localStorage.setItem("tasks", JSON.stringify(updatedTasks))
-    }
+   const updateTaskStatus = (id: string, newStatus: "completed" | "pending") => {
+    const updatedTasks = tasks.map((task) =>
+        task.id === id ? { ...task, status: newStatus } : task
+    );
+    setTasks(updatedTasks);
+    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+}
+
 
     const deleteTask = (id: string) => {
         const updatedTasks = tasks.filter((task) => task.id !== id)

@@ -8,18 +8,17 @@ const Layout = () => {
                     <h1 className="text-white text-xl">
                         Personal Task Manager
                     </h1>
-                    <div>
+                    <div className="ml-auto flex gap-4">
                         <Link
                             to="/add-task"
                             className="bg-blue-500 text-white py-2 px-4 rounded"
                         >
                             Add Task
                         </Link>
-                    </div>
-                    <div>
+                   
                         <Link
                             to="/task-page"
-                            className="bg-blue-500 text-white py-2 px-3 rounded"
+                            className="bg-blue-500 text-white py-2 px-4 rounded"
                         >
                             Task List
                         </Link>
