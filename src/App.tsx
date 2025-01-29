@@ -7,6 +7,7 @@ import {
 import Layout from "./Components/layout"
 import AddTask from "./Pages/add-task"
 import TaskListPage from "./Pages/task-page"
+import TaskPage from "./Pages/task-page"
 
 const App = () => {
     const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const App = () => {
             <Route path="/" element={<Layout />}>
                 <Route path="/tasks" element={<TaskListPage />} />
                 <Route path="/add-task" element={<AddTask />} />
+                <Route path="/task-page" element={<TaskPage />} />
             </Route>
         )
     )
